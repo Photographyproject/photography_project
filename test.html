@@ -1,52 +1,91 @@
 <html>
-
-<<<<<<< HEAD
-<h1 style= "font-family: Canon" align="center">basics.</h1>
-<body> discover. dare. do. </body>
-=======
-<h1>basics.</h1>
->>>>>>> cfa4f9d0d5f19fb3a117bcf71580c1d335beed61
-
+<head>
 <style>
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+/*here is where the dropdown menu is*/
+/*drop down button*/
+.dropbtn {
+    background-color: #F7F9FB;
+    color: #687864;
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
 }
-li {
-  float: left;
+/* dropdown hover and focus*/
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
 }
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+/* the container (div) to position dropdown*/
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
-li a:hover {
-  background-color: #111;
+/* content inside dropdown -hidden */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
+/* links inside dropdown*/
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* change colors of dropdown links when hovering*/
+.dropdown a:hover {background-color: #f1f1f1}
+/* show dropdown menu*/
+.show {display:block;}
+/* this is where the title is*/
 </style>
+</head>
+<body>
+<h1 style= "font-family: Canon" align="center">basic.</h1>
+<p align="center"> discover. dare. do. </p>
+
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">menu</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">home</a>
+    <a href="#resources">resources</a>
+    <a href="#photographers">photographers</a>
+    <a href="#moods">moods</a>
+    <a href="#community">community</a>
+    <a href="#creators">creators</a>
+  </div>
+</div>
+
+<script>
+/* when user clicks on button, show the dropdown content*/
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+/* close dropdown when user clicks out*/
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+      openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</head>
+</body>
 
 <body>
-  <ul>
-    <li><a class ="activate" href="#home">home</a></li>
-    <li><a href="#resources">resources</a></li>
-    <li><a href="#photographers">photographers</a></li>
-    <li><a href="#mood">mood</a></li>
-    <li><a href="#community">community</a></li>
-    <li><a href="#creators">creators</a></li>
-  </ul>
-<<<<<<< HEAD
-=======
 <center>
   <br>
   <br>
 <img src = "photography_project/penguin.jpg" width="950" height"200">
 </center>
->>>>>>> cfa4f9d0d5f19fb3a117bcf71580c1d335beed61
 </body>
-
 </html>
