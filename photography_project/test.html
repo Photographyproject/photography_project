@@ -1,14 +1,5 @@
 <html>
 <head>
-<div class="dropdown">
-  <button onClick="myFunction()" class="dropbtn">menu</button>
-  <div id="myDropdown" class="dropbtn">
-    <a href="#">link 1</a>
-    <a href="#">link 2</a>
-    <a href="#">link 3</a>
-    <a href="#">link 4</a>
-  </div>
-</div>
 <style>
 /*here is where the dropdown menu is*/
 /*drop down button*/
@@ -50,43 +41,41 @@
 .show {display:block;}
 /* this is where the title is*/
 </style>
+<body>
+
+  <div class="dropdown">
+    <button onClick="myFunction()" class="dropbtn">menu</button>
+    <div id="myDropdown" class="dropbtn">
+      <a href="#">link 1</a>
+      <a href="#">link 2</a>
+      <a href="#">link 3</a>
+      <a href="#">link 4</a>
+    </div>
+  </div>
+
+<script>
+/* when user clicks on button, show the dropdown content*/
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+/* close dropdown when user clicks out*/
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+      openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 </head>
+</body>
 
 <h1 style= "font-family: Canon" align="center">basics.</h1>
 <body align="center"> discover. dare. do. </body>
-
-<style>
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-li {
-  float: left;
-}
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-li a:hover {
-  background-color: #111;
-}
-</style>
-
-<body>
-  <ul>
-    <li><a class ="activate" href="#home">home</a></li>
-    <li><a href="#resources">resources</a></li>
-    <li><a href="#photographers">photographers</a></li>
-    <li><a href="#mood">mood</a></li>
-    <li><a href="#community">community</a></li>
-    <li><a href="#creators">creators</a></li>
-  </ul>
-</body>
-
 </html>
