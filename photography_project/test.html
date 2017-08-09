@@ -1,0 +1,92 @@
+<html>
+<head>
+<div class="dropdown">
+  <button onClick="myFunction()" class="dropbtn">menu</button>
+  <div id="myDropdown" class="dropbtn">
+    <a href="#">link 1</a>
+    <a href="#">link 2</a>
+    <a href="#">link 3</a>
+    <a href="#">link 4</a>
+  </div>
+</div>
+<style>
+/*here is where the dropdown menu is*/
+/*drop down button*/
+.dropbtn {
+  background-color: #F7F9FB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* dropdown hover and focus*/
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+/* the container (div) to position dropdown*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+/* content inside dropdown -hidden */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/* links inside dropdown*/
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* change colors of dropdown links when hovering*/
+.dropdown-content a:hover {background-color: #f1f1f1}
+/* show dropdown menu*/
+.show {display:block;}
+/* this is where the title is*/
+</style>
+</head>
+
+<h1 style= "font-family: Canon" align="center">basics.</h1>
+<body align="center"> discover. dare. do. </body>
+
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #111;
+}
+</style>
+
+<body>
+  <ul>
+    <li><a class ="activate" href="#home">home</a></li>
+    <li><a href="#resources">resources</a></li>
+    <li><a href="#photographers">photographers</a></li>
+    <li><a href="#mood">mood</a></li>
+    <li><a href="#community">community</a></li>
+    <li><a href="#creators">creators</a></li>
+  </ul>
+</body>
+
+</html>
