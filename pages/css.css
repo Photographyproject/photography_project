@@ -2,17 +2,21 @@
 body {
     color: black;
     text-align: center;
-    font-family:'Montserrat', sans-serif;
+    font-family:'Montserrat-light', sans-serif;
 }
 div.block1 {
   background-color:#F7F9FB;
   width = 100%;
   margin-bottom:-22px;
+  margin-right:-22px;
+  margin-left:-22px;
 }
 div.block2 {
   background-color:#8FC1E3;
   width = 100%;
   margin-bottom:-22px;
+  margin-right:-22px;
+  margin-left:-22px;
 }
 
 
