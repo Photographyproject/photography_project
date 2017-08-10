@@ -1,62 +1,8 @@
 <html>
 <head>
-<style>
-img {
-  max-width: 100%
-  height: auto;
-}
-div.line {
-    background-color: gray;
-    color: black;
-    padding: 1px;
-    float: center;
-    box-shadow: 0px 3px 10px #888;
-}
+  <link rel="stylesheet" href="css.css">
+  <script src="javascript.js"></script>
 
-img.round {
-  border-radius: 50%;
-}
-
-/*here is where the dropdown menu is*/
-/*drop down button*/
-.dropbtn {
-    background-color: #F7F9FB;
-    color: #687864;
-    padding: 16px;
-    font-size: 16px;
-    cursor: pointer;
-}
-/* dropdown hover and focus*/
-.dropbtn:hover, .dropbtn:focus {
-    background-color: #3e8e41;
-}
-/* the container (div) to position dropdown*/
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-/* content inside dropdown -hidden */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-/* links inside dropdown*/
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-/* change colors of dropdown links when hovering*/
-.dropdown a:hover {background-color: #f1f1f1}
-/* show dropdown menu*/
-.show {display:block;}
-/* this is where the title is*/
-</style>
 <body>
 <h1 style= "font-family: Canon" align="center">c r e a t o r s</h1>
 <p align="center"> who we are and why we're here </p>
@@ -74,26 +20,7 @@ img.round {
   </div>
 </div>
 
-<script>
-/* when user clicks on button, show the dropdown content*/
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-/* close dropdown when user clicks out*/
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
 
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-      openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
 </head>
 
 
