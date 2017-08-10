@@ -1,0 +1,42 @@
+body {
+    color: black;
+    text-align: center;
+    font-family:"Montserrat-Light"
+
+
+}
+div.block1 {
+  background-color:#F7F9FB;
+  width = 100%;
+}
+div.block2 {
+  background-color:#8FC1E3;
+  width = 100%;
+}
+
+div.block1 h3 {
+  color: black
+}
+
+div.brand h1 {
+    color: black;
+    text-align: right;
+    font-family:"Aku&Kamu"
+
+ }
+h2 {
+
+ }
+h3 {
+
+ }
+p {
+
+  }
+.float_center {
+  float: right;
+
+  position: relative;
+  left: -50%;
+  text-align: left;
+}
