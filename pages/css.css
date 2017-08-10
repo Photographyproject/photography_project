@@ -1,9 +1,8 @@
+
 body {
     color: black;
     text-align: center;
-    font-family:"Montserrat-Light"
-
-
+    font-family:'Montserrat-light', sans-serif;
 }
 div.block1 {
   background-color:#F7F9FB;
@@ -16,10 +15,7 @@ div.block2 {
   margin-bottom:-22px;
 }
 
-p {
-  color:black;
-  font-family:"Montserrat-Light"
-}
+
 
 h1 {
     color: black;
