@@ -8,30 +8,34 @@ body {
 div.block1 {
   background-color:#F7F9FB;
   width = 100%;
+  margin-bottom:-22px;
 }
 div.block2 {
   background-color:#8FC1E3;
   width = 100%;
+  margin-bottom:-22px;
 }
 
-div.block1 h3 {
-  color: black
+p {
+  color:black;
 }
 
-div.brand h1 {
+h1 {
     color: black;
     text-align: right;
     font-family:"Aku&Kamu"
 
  }
 h2 {
-
+    color:block;
+    text-align:center;
  }
 h3 {
 
  }
 p {
-
+    color:black;
+    text-align: center;
   }
 .float_center {
   float: right;
