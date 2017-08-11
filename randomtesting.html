@@ -1,7 +1,7 @@
 <html>
 <head>
-
 <style>
+
 /*here is where the dropdown menu is*/
 /*drop down button*/
 .dropbtn {
@@ -17,9 +17,10 @@
 }
 /* the container (div) to position dropdown*/
 .dropdown {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
+
 /* content inside dropdown -hidden */
 .dropdown-content {
     display: none;
@@ -41,23 +42,24 @@
 /* show dropdown menu*/
 .show {display:block;}
 /* this is where the title is*/
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 </style>
 </head>
-<h1 style= "font-family: Canon" align="center">basic.</h1>
-<p align="center"> discover. dare. do. </p>
 <body>
 
-<!-- <div class="dropdown">
-<button onclick="myFunction()" class="dropbtn">menu</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#test">home</a>
-    <a href="pages/resources.html">resources</a>
-    <a href="pages/photographers.html">photographers</a>
-    <a href="pages/moods.html">moods</a>
-    <a href="pages/community.html">community</a>
-    <a href="pages/creators.html">creators</a>
-  </div>
-</div> -->
 
 <div class="dropdown">
   <img src="menu.png" alt="menu" width="40" height="30">
@@ -70,26 +72,5 @@
     <a href="creators.html">creators</a>
   </div>
 </div>
-
-<!-- <script>
-/* when user clicks on button, show the dropdown content*/
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-/* close dropdown when user clicks out*/
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-      openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script> -->
-
 </body>
+</html>
