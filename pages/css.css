@@ -5,7 +5,8 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 div.block1 {
-  background-color:#F7F9FB;
+  /*background-color:#F7F9FB;*/
+  background: linear-gradient(#FFFFFA,#F0FFFF,#FFDFDD);
   width = 100%;
   margin-bottom:-22px;
 }
