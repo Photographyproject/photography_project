@@ -1,80 +1,120 @@
 <html>
 <head>
-<style>
-/*here is where the dropdown menu is*/
-/*drop down button*/
-.dropbtn {
-    background-color: #F7F9FB;
-    color: #687864;
-    padding: 16px;
-    font-size: 16px;
-    cursor: pointer;
-}
-/* dropdown hover and focus*/
-.dropbtn:hover, .dropbtn:focus {
-    background-color: #3e8e41;
-}
-/* the container (div) to position dropdown*/
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-/* content inside dropdown -hidden */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-/* links inside dropdown*/
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-/* change colors of dropdown links when hovering*/
-.dropdown a:hover {background-color: #f1f1f1}
-/* show dropdown menu*/
-.show {display:block;}
-/* this is where the title is*/
-</style>
-<body>
-<h1 style= "font-family: Canon" align="center">basic.</h1>
-<p align="center"> discover. dare. do. </p>
+  <link rel="stylesheet" href="css.css">
+  <script src="javascript.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+</head>
 
+<body>
+<h1 style= "font-family: Canon" align="center">title of page here</h1>
+<!-- drop down button -->
 <div class="dropdown">
 <button onclick="myFunction()" class="dropbtn">menu</button>
   <div id="myDropdown" class="dropdown-content">
-    <a href="../test.html">home</a>
-    <a href="resources.html">resources</a>
-    <a href="photographers.html">photographers</a>
-    <a href="moods.html">moods</a>
-    <a href="community.html">community</a>
-    <a href="creators.html">creators</a>
+    <a href="#test">home</a>
+    <a href="pages/resources.html">resources</a>
+    <a href="pages/photographers.html">photographers</a>
+    <a href="pages/moods.html">moods</a>
+    <a href="pages/community.html">community</a>
+    <a href="pages/creators.html">creators</a>
   </div>
 </div>
 
-<script>
-/* when user clicks on button, show the dropdown content*/
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-/* close dropdown when user clicks out*/
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-      openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
-</head>
+
+<div class="block1">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+<h2>Jon Taylor Sweet</h2>
+<p>Seattle, Wa
+<br>
+<br>
+<br>
+<br>
+Jon is a wedding photographer who "loves life, loves coffee, and loves to celebrate moments with the finest people"!
+<br>
+<br>
+<br>
+<br>
+</p>
+<div class="img">
+<img src="https://static1.squarespace.com/static/5621f7f0e4b092a567c1475d/t/572cefdce707ebda4255b396/1462562806130/IMG_3110.jpg?format=2500w" >
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
+</div>
+<div class="block2">
+  <br>
+<h2> section 2</h2>
+<p> put text here</p>
+  <br>
+  <br>
+  <br>
+</div>
+<div class="block1">
+  <br>
+<h2>section 3</h2>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
+<div class="block2">
+  <br>
+<h2>section 4</h2>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
+<div class="block1">
+  <br>
+<h2>section 5</h2>
+<br>
+<br>
+<br>
+<br>
+</div>
+<div class="block2">
+  <br>
+<h2>section 6</h2>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
+
+</body>
 </html>

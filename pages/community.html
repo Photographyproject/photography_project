@@ -4,9 +4,8 @@
   <script src="javascript.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
 </head>
-
 <body>
-
+<p> like us on facebook! </p>
   <!--start of attempting to add facebook like button-->
   <div id="fb-root"></div>
   <script>(function(d, s, id) {
@@ -34,20 +33,19 @@
     <a href="creators.html">creators</a>
   </div>
 </div>
-
 <body>
 <div class="block1">
   <br>
-<h2>section 2</h2>
-<p> put text here</p>
+<h2>pnw pictures</h2>
+<p>featuring some dope photos all having do with the pacific north west.</p>
   <br>
   <br>
   <br>
 </div>
 <div class="block2">
   <br>
-<h2> section 2</h2>
-<p> put text here</p>
+<h2> creater photos</h2>
+<p> featuring some of our personal work.</p>
   <br>
   <br>
   <br>
@@ -96,24 +94,37 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 
+<!-- more facebook code -->
+<head>
+  <title>Your Website Title</title>
+    <!-- You can use open graph tags to customize link previews.
+    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+  <meta property="og:url"           content="http://www.your-domain.com/your-page.html" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Your Website Title" />
+  <meta property="og:description"   content="Your description" />
+  <meta property="og:image"         content="http://www.your-domain.com/path/image.jpg" />
+</head>
 <body>
 
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 
+  <!-- Your like button code -->
+  <div class="fb-like"
+    data-href="http://www.your-domain.com/your-page.html"
+    data-layout="standard"
+    data-action="like"
+    data-show-faces="true">
+  </div>
+  <!-- end of more facebook code -->
 
-
-<!--<div class='float_center'>
-  <p>
-    hello
-  </p>
-</div>
-
-<div class="brand">
-  <h1> brand </h1>
-</div>
-<div class="block1">
-  <h3>hello</h3>
-</div>
-
-
-</body>
-</html> -->
+<body>
+</html>
