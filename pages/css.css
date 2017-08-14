@@ -32,6 +32,10 @@ div.img {
 
 }
 
+img {
+    image-orientation: from-image;
+}
+
 
 
 
