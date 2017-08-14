@@ -33,6 +33,7 @@ div.img {
 }
 
 div.title img {
+>>>>>>> 07e74330d2e3fe56f97b931dcf18af6b8e41f515
 
 }
 
@@ -123,4 +124,7 @@ div.dropdown img {
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
+}
+#image {
+  image-orientation: flip; /* Can be changed in the live sample */
 }
