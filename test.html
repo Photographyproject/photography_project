@@ -1,0 +1,174 @@
+<!-- <html>
+<head>
+
+<style>
+/*here is where the dropdown menu is*/
+/*drop down button*/
+.dropbtn {
+    background-color: #F7F9FB;
+    color: #687864;
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+/* dropdown hover and focus*/
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+/* the container (div) to position dropdown*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+/* content inside dropdown -hidden */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+/* links inside dropdown*/
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* change colors of dropdown links when hovering*/
+.dropdown a:hover {background-color: #f1f1f1}
+/* show dropdown menu*/
+.show {display:block;}
+/* this is where the title is*/
+</style>
+</head>
+<h1 style= "font-family: Canon" align="center">basic.</h1>
+<p align="center"> discover. dare. do. </p>
+<body>
+
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">menu</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#test">home</a>
+    <a href="pages/resources.html">resources</a>
+    <a href="pages/photographers.html">photographers</a>
+    <a href="pages/moods.html">moods</a>
+    <a href="pages/community.html">community</a>
+    <a href="pages/creators.html">creators</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <img src="menu.png" alt="menu" width="40" height="30">
+  <div id="myDropdown" class="dropdown-content">
+    <a href="../test.html">home</a>
+    <a href="resources.html">resources</a>
+    <a href="photographers.html">photographers</a>
+    <a href="moods.html">moods</a>
+    <a href="community.html">community</a>
+    <a href="creators.html">creators</a>
+  </div>
+</div>
+
+<script>
+/* when user clicks on button, show the dropdown content*/
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+/* close dropdown when user clicks out*/
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+      openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html> -->
+<html>
+<head>
+<style>
+
+/*here is where the dropdown menu is*/
+/*drop down button*/
+.dropbtn {
+    background-color: #F7F9FB;
+    color: #687864;
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+/* dropdown hover and focus*/
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+/* the container (div) to position dropdown*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* content inside dropdown -hidden */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+/* links inside dropdown*/
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* change colors of dropdown links when hovering*/
+.dropdown a:hover {background-color: #f1f1f1}
+/* show dropdown menu*/
+.show {display:block;}
+/* this is where the title is*/
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+</style>
+</head>
+<h1 style= "font-family: Canon" align="center">basic.</h1>
+<p align="center"> discover. dare. do. </p>
+<body>
+
+
+<div class="dropdown">
+  <img src="menu.png" alt="menu" width="40" height="30">
+  <div id="myDropdown" class="dropdown-content">
+    <a href="test.html">home</a>
+    <a href="resources.html">resources</a>
+    <a href="photographers.html">photographers</a>
+    <a href="moods.html">moods</a>
+    <a href="community.html">community</a>
+    <a href="creators.html">creators</a>
+  </div>
+</div>
+</body>
+</html>
