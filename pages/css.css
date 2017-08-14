@@ -32,12 +32,16 @@ div.img {
 
 }
 
+<<<<<<< HEAD
 img {
     image-orientation: from-image;
 }
 
+=======
+div.title img {
+>>>>>>> 07e74330d2e3fe56f97b931dcf18af6b8e41f515
 
-
+}
 
 h1 {
     color: black;
@@ -84,6 +88,11 @@ p {
   display: inline-block;
 }
 
+div.dropdown img {
+  width="40"
+  height"30"
+}
+
 /* content inside dropdown -hidden */
 .dropdown-content {
     display: none;
@@ -117,4 +126,8 @@ p {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
 }
