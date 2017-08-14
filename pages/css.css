@@ -32,8 +32,9 @@ div.img {
 
 }
 
+div.title img {
 
-
+}
 
 h1 {
     color: black;
@@ -80,6 +81,11 @@ p {
   display: inline-block;
 }
 
+div.dropdown img {
+  width="40"
+  height"30"
+}
+
 /* content inside dropdown -hidden */
 .dropdown-content {
     display: none;
@@ -113,4 +119,8 @@ p {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
 }
