@@ -25,6 +25,7 @@ img {
 
 }
 
+
 div.img {
 
   width:100%;
@@ -32,8 +33,9 @@ div.img {
 
 }
 
-div.title img {
->>>>>>> 07e74330d2e3fe56f97b931dcf18af6b8e41f515
+div.menu img {
+  width="40"
+  height="30"
 
 }
 
