@@ -15,9 +15,6 @@ div.block2 {
   margin-bottom:-22px;
 }
 
-
-
-
 div.img {
 
   width:100%;
@@ -41,6 +38,7 @@ h2 {
     color:block;
     text-align:center;
     font-size: 50px;
+    font-weight:normal;
  }
 h3 {
 
