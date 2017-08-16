@@ -15,23 +15,16 @@ div.block2 {
   margin-bottom:-22px;
 }
 
-
-img {
-  margin-right:1px;
-  margin-top:1px;
-  margin-bottom:1px;
-  width:23%;
-  height:25%
-
-}
-
 div.img {
 
 
 }
 
+div.menu img {
+  width="40"
+  height="30"
 
-
+}
 
 h1 {
     color: black;
@@ -43,6 +36,7 @@ h2 {
     color:block;
     text-align:center;
     font-size: 50px;
+    font-weight:normal;
  }
 h3 {
 
@@ -78,6 +72,11 @@ p {
   display: inline-block;
 }
 
+div.dropdown img {
+  width="40"
+  height"30"
+}
+
 /* content inside dropdown -hidden */
 .dropdown-content {
     display: none;
@@ -111,4 +110,8 @@ p {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+#image {
+  image-orientation: flip; /* Can be changed in the live sample */
 }
