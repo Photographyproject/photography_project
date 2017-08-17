@@ -1,6 +1,6 @@
 <html>
 <head>
-  <link rel="stylesheet" href="pages/css.css">
+  <link rel="stylesheet" href="css.css">
   <script src="javascript.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:200" rel="stylesheet">
 <style>
@@ -58,25 +58,65 @@
 .dropdown:hover .dropdown-content {
     display: block;
 }
+/*body {
+    background-image: url("http://wallpapersdsc.net/wp-content/uploads/2016/09/Seattle-Wallpaper.jpg");
+}*/
 
 </style>
 </head>
-<body>
-  <table>
+
+<body background="back.png">
+  <table style="float: left;">
     <tr>
       <th><div class="dropdown">
         <img src="menu.png" alt="menu" width="40" height="30">
         <div id="myDropdown" class="dropdown-content">
-          <a href="pages/test.html">home</a>
-          <a href="pages/resources.html">resources</a>
-          <a href="pages/photographers.html">photographers</a>
-          <a href="pages/moods.html">moods</a>
-          <a href="pages/community.html">community</a>
-          <a href="pages/creators.html">creators</a>
-          <a href="pages/citations.html">citations</a>
+          <a href="../test.html">home</a>
+          <a href="resources.html">resources</a>
+          <a href="photographers.html">photographers</a>
+          <a href="moods.html">moods</a>
+          <a href="community.html">community</a>
+          <a href="creators.html">creators</a>
+          <a href="citations.html">citations</a>
         </div>
       </div></th>
     </tr>
   </table>
+
+
+
+  <!-- <title>W3.CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+  .mySlides {display:none;}
+  </style>
+  <body> -->
+
+  <!-- <h2 class="w3-center"></h2>
+
+  <div class="w3-content w3-section" style="max-width:1250px">
+    <img class="mySlides" src="trees.jpg" style="width:110%">
+    <img class="mySlides" src="path.jpg" style="width:110%">
+    <img class="mySlides" src="seattle.jpg" style="width:110%">
+  </div>
+
+  <script>
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+  }
+  </script> -->
+
 </body>
 </html>
